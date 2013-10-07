@@ -2,11 +2,11 @@
 
 require 'helper'
 
-describe 'A useless blog', :type => :feature do
+describe 'GitHub project page', :type => :feature do
 
-  it "should at least work" do
-    visit 'https://alphahydrae.com'
-    page.should have_content('Alpha Hydrae')
+  it "should be named capybara-selenium-rspec-seed-app" do
+    visit 'https://github.com/dancastellani/capybara-selenium-rspec-seed-app'
+    page.should have_content('capybara-selenium-rspec-seed-app')
   end
 end
 
